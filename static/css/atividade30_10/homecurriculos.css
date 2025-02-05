@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+  width: 100vw;
+  height: auto;
+  color: #222;
+  background: url('../../img/atividade30_10/fundo.jpg') ;
+  background-size: cover;
+}
+.home{
+  width: 100%;
+
+}
+
+.home a{
+  display: block;
+  margin-left: 30px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #051D40;
+}
+
+.home a i{
+  padding-right: 5px;
+}
+
+.home a:hover{
+  color: #2d5473;
+  transition: .3s;
+}
+
+h1{
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 80px;
+  font-size: 2.7rem;
+}
+
+main{
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+}
+ul{
+  display: flex;
+  gap: 20px;
+  width: 80%;
+  flex-wrap: wrap;       
+  margin: 0 auto;
+}
+
+ul li{
+  flex: 1;
+  width: 100%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease; 
+}
+
+ul li a{
+  flex: 1;              
+  display: flex;  
+  justify-content: center; 
+  align-items: center;  
+  padding: 20px;
+  border-radius: 5px;
+  background: #051D40;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  transition: all 0.3s ease;
+}
+
+ul li a:hover{
+  background: #073066;
+  transform: scale(1.05);
+}
+
+ul li:hover{
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}

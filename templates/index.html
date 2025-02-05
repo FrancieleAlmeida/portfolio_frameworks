@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio - Disciplina Frameworks</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/modal.css')}}">
+    <script src="{{url_for('static', filename='js/script.js')}}" defer></script>
+  </head>
+
+  <body>
+    <a href="#header"><img class="inicio" src="{{url_for('static', filename='img/topo.svg')}}" alt=""></a>
+    <header class="header" id="header">
+      <a href="{{url_for('index')}}"><img src="{{url_for('static', filename='img/TADS.svg')}}" alt="logo"></a>
+
+      <nav>
+        <ul class="header-menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="https://github.com/FrancieleAlmeida/Frameworks_para_Desenvolvimento_Web.git" target="_blank">
+              <img src="{{url_for('static', filename='img/github.svg')}}" alt=""></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <img class="perfil" src="{{url_for('static', filename='img/perfil.jpg')}}" alt="foto do perfil" width="335" height="510">
+      <div>
+        <h1>Frameworks para Desenvolvimento Web</h1>
+        <p>Análise e Desenvolvimento de Sistemas</p>
+        <span>Franciele Almeida de Araujo</span>
+      </div>
+    </main>
+
+    <section class="sobre" id="sobre">
+      <h2>Sobre este Portfólio</h2>
+      <p>Este portfólio reúne os projetos desenvolvidos na disciplina Frameworks para Desenvolvimento Web. Nele, estão registrados todos os conteúdos apresentados em aula, desde a introdução à matéria no primeiro dia até o trabalho final, previsto para ser entregue em fevereiro. O objetivo é demonstrar a evolução ao longo do curso, com destaque para o aprendizado e aplicação de conceitos fundamentais no desenvolvimento de aplicações web modernas.</p>
+      <p>A ementa é composta por: REST. Princípios RESTful. Webservices. APIs de criação de serviços web. HTTP. Mapeamento objeto-relacional. APIs de persistência objeto-relacional.</p>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <div class="linha-tempo">
+        <div class="cronologia">
+          <span class="ano">2024</span>
+          <span class="barra-tempo"></span>
+          <span class="barra-tempo"> </span>
+          <span class="barra-tempo"> </span>
+          <span class="barra-tempo"> </span>
+          <span class="barra-tempo"> </span>
+          <span class="barra-tempo"> </span>
+        </div>
+        <div class="titulos">
+          <div>
+            <span class="datas">09 10</span>
+            <h3>Aula 01 - Introdução</h3>
+            <p class="titulo-resumo">Na aula, foram apresentados a ementa e o plano da disciplina. Além disso, foi solicitada uma pesquisa, com o objetivo de aprofundar o conhecimento sobre os tópicos que serão abordados ao longo do curso. Marcado a entrega do Portfolio para 12/02/25 e a Prova foi adiada para o dia 08/01/25 e 15/01/25 e o trabalho em grupo para 22/01/25. <a href="javascript:void(0);" onclick="openModal('aula1')">Saiba +</a> </p>
+          </div>
+          <div>
+            <span class="datas">23 10</span>
+            <h3>Aula 02 - Ambiente Virtual Python</h3>
+            <p class="titulo-resumo">Conteudo da Aula: Nesta aula criamos as pastas: templates, static e pastas adjacentes. Além disso, o arquivo app.py, Utilizamos a barra de progresso e o tempo. As aulas vão começar com uma lista de atividades, depois conceitos que vamos utilizar pra fazer essas atividades. <a href="javascript:void(0);" onclick="openModal('aula2')">Saiba +</a> </p>
+            </p>
+          </div>
+
+          <div>
+            <span class="datas">30 10</span>
+            <h3>Aula 03 - Introdução ao Flask + Atividades</h3>
+            <p class="titulo-resumo">Conteudo da Aula: Fundamentos do Flask, um microframework para desenvolvimento de aplicações web em Python. Exploramos os conceitos de requisição e resposta (Request & Response), essenciais no ambiente web. Entendemos que:Toda aplicação web funciona de forma reativa, processando apenas quando recebe uma requisição.O Flask permite que o código Python "escute" essas requisições e devolva uma resposta ao cliente.
+              <a href="javascript:void(0);" onclick="openModal('aula3')">Saiba + </a>
+              <span><a href="{{url_for('homeclassroom30_10')}}" target="_blank"> Ir para as atividades</a></span>
+            </p>
+          </div>
+
+          <div>
+            <span class="datas">06 11</span>
+            <h3>Aula 04 - Render Template + Atividades</h3>
+            <p class="titulo-resumo">Conteudo da Aula: Na aula, aprendemos a trabalhar com o Flask e templates dinâmicos. Utilizamos o método render_template para renderizar páginas HTML e passar dados do backend (Python) para o frontend (HTML). O Flask utiliza a linguagem de template Jinja2 para inserir variáveis diretamente no HTML, tornando a aplicação mais interativa e dinâmica
+              <a href="javascript:void(0);" onclick="openModal('aula4')">Saiba + </a>
+              <span><a href=""> Ir para as atividades</a></span>
+            </p>
+          </div>
+
+          <div>
+            <span class="datas">13 11</span>
+            <h3>Aula 05 - Regras para Desenvolvimento + Atividades</h3>
+            <p class="titulo-resumo">Conteudo da Aula: Na aula abordamos práticas essenciais para o desenvolvimento de backends seguros e eficientes utilizando Flask. As principais regras e conceitos discutidos são: Validar os dados para evitar falhas de segurança, Garantir a consistência e persistência dos dados, Tratar exceções para evitar que a aplicação "quebre", A arquitetura síncrona do Flask é ideal para esse tipo de aplicação, garantindo respostas rápidas ao usuário.
+              <a href="javascript:void(0);" onclick="openModal('aula5')">Saiba + </a>
+              <span><a href=""> Ir para as atividades</a></span>
+            </p>
+          </div>
+
+          <div>
+            <span class="datas">27 11</span>
+            <h3>Aula 06 - Apresentação dos Protótipos do Projeto Final</h3>
+            <p class="titulo-resumo">Conteudo da Aula: Durante a aula, três grupos apresentaram os protótipos e objetivos de seus projetos finais. Cada grupo teve 15 minutos para realizar a apresentação, utilizando slides para destacar a evolução do trabalho até o momento. Ao final das apresentações, o professor fez observações e deu orientações específicas para melhorias nos projetos.
+            </p>
+          </div>
+
+          <div>
+            <span class="datas">18 12</span>
+            <h3>Aula 07 - Duvidas + Atividades</h3>
+            <p class="titulo-resumo">Conteudo da Aula: A aula foi dedicada a esclarecer dúvidas e apresentar as novidades relacionadas aos projetos práticos. A prova, inicialmente marcada para hoje, foi adiada para os dias 08/01/25 e 15/01/25. Como forma de preparação, foram enviadas as atividades que seriam abordadas na prova, permitindo que os alunos pratiquem e se familiarizem com os conceitos. As atividades incluem: 1. Mini-blog Pessoal, 2. Página de autenticação básica, 3. Página de upload de foto.
+              <a href="javascript:void(0);" onclick="openModal('aula7')">Saiba + </a>
+              <span><a href=""> Ir para as atividades</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="modal-background" class="modal-background"></div>
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+    </div>
+
+  </body>
+
+</html>
