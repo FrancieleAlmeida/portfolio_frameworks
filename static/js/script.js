@@ -16,10 +16,17 @@ function openModal(aula) {
           </ul>
         </div>`;
       break;
-    case 'aula2':
+    case 'aula3':
       modalContent = `
         <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
+
+          <h2>Tema dos Trabalhos</h2>
+          <ul>
+            <li><h4>- Sistema de chamada por câmera</h4></li>
+            <li><h4>- Análise de emoções em imagem</h4></li>
+            <li><h4>- Scanner para documento PDF</h4></li>
+          </ul>
 
           <h2>Padrões de Arquivo e Organização de Código</h2>
             <ul>
@@ -67,7 +74,7 @@ function openModal(aula) {
 
     `
       break;
-    case 'aula3':
+    case 'aula4':
       modalContent = `
         <div class="modal-content">
         <span class="close" onclick="closeModal()">&times;</span>
@@ -143,7 +150,7 @@ function openModal(aula) {
         </div>
       `;
       break;
-    case 'aula4':
+    case 'aula5':
       modalContent = `
       <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -169,7 +176,7 @@ function openModal(aula) {
       </div>
     `
       break;
-    case 'aula5':
+    case 'aula6':
       modalContent = `
       <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -222,7 +229,7 @@ function openModal(aula) {
       </div>
     `
       break;
-    case 'aula7':
+    case 'aula11':
       modalContent = `
       <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
