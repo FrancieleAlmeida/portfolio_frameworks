@@ -1,0 +1,39 @@
+[
+  {
+    "form": {
+      "title": "Formulário",
+      "fields": [
+        {
+          "label": "Name",
+          "name": "name",
+          "type": "text",
+          "placeholder": "informe seu nome"
+        },
+        {
+          "label": "Email",
+          "name": "email",
+          "type": "email",
+          "placeholder": "informe seu email"
+        },
+        {
+          "label": "Username",
+          "name": "username",
+          "type": "text",
+          "placeholder": "informe seu usuario"
+        },
+        {
+          "label": "Password",
+          "name": "password",
+          "type": "password",
+          "placeholder": "informe sua senha"
+        },
+        {
+          "label": "Cell Phone",
+          "name": "cell_phone",
+          "type": "number",
+          "placeholder": "celular (99)-99999-9999"
+        }
+      ]
+    }
+  }
+]

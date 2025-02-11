@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Login</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/atividade06_11/login.css')}}">
+  </head>
+
+  <body>
+
+    <form class="form" action="{{ url_for('atividades06_11.activity1') }}" method="POST">
+      {% block conteudo %}
+      {% set messages = get_flashed_messages() %}
+      {% if messages %}
+      <div class="alert alert-danger" role="alert">
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+      </div>
+      {% endif %}
+      {% endblock %}
+
+      <label for="user">Usuário:</label>
+      <input type="text" name="user" id="user" required placeholder="Informe seu usuário">
+
+      <label for="password">Senha:</label>
+      <input type="password" name="password" id="password" required {% if is_disabled %}disabled{% endif %} placeholder="Informe sua senha">
+
+      <input type="submit" value="Entrar" {% if is_disabled %}disabled{% endif %} >
+    </form>
+
+  </body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Codigo Classe</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/atividade06_11/atividade_classe.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Classe Users em Python</h1>
+        <pre>
+      class Users:
+      
+          def __init__ (self, name,username, email, password, cell_phone):
+            self._name = name
+            self._username = username
+            self._email = email
+            self._password = password
+            self.cell_phone = cell_phone 
+            
+          @property
+          def username(self):
+            return self._username
+          
+          
+          @username.setter
+          def username(self, value):
+            if len(value) < 3:
+              raise ValueError("Nome de usuario deve conter no minimo 3 caracteres")
+            self._username = value
+            
+          @property
+          def password(self):
+            return self._password
+          
+          @password.setter
+          def password(self, value):
+            if len(value) < 6:
+              raise ValueError("Senha deve conter no minimo 6 caracteres")
+            self._password = value
+            
+            
+            @property
+            def cell_phone(self):
+                return self._cell_phone
+        
+            @cell_phone.setter
+            def cell_phone(self, value):
+                if not re.fullmatch(r"\d{11}", value):
+                    raise ValueError("Número de celular inválido! Use 11 dígitos (ex: 11987654321)")
+                self._cell_phone = value
+        
+            
+          def authentication(self, username,password, session):
+            if self._username == username and self._password == password:
+              session['is_authenticated'] = True
+              session['username'] = self._username
+              return True
+            
+            else:
+              session['is_authenticated'] = False
+              print("Usuario ou senha invalido")
+              return False
+            
+          def logout(self, session):
+            session['is_authenticated'] = False
+            return True
+              
+              
+      session={}
+        </pre>
+    </div>
+</body>
+</html>

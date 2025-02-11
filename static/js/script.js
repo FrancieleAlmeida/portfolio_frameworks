@@ -166,13 +166,15 @@ function openModal(aula) {
         <pre><code>&lt;h1&gt;Olá, {{ nome }}&lt;/h1&gt;</code></pre>
           <h2>Atividades</h2>
           <ul>
-          <li>1. Considerando um usuario e uma senha mocados faça uma pagina de autenticação(login e senha), e retorne um bom dia fulano,boa tarde ou boa noite, caso usuario e senha não conferir, informar "login ao confere";  </li>
+          <li>1. Considerando um usuario e uma senha mocados faça uma pagina de autenticação(login e senha), e retorne um bom dia fulano,boa tarde ou boa noite, caso usuario e senha não conferir, informar "login não confere";  </li>
           <li>2. Limite as tentativas de autenticação do usuário em 2x(atividade 1), se ele errar duas vezes, tirar a opção de login e exibir uma mensagem de erro;  </li>
           <li>3. Estilizar de forma bonita essas atividades;  </li>
           <li>4. Escreva um script python que gere automaticamente um template html contendo um formulario para input de dados  com campos que deve ser recebido por um Json;</li>
           <li>5. Incremente o script 4 para que após gerar o template, ele construa automáticamente uma rota que permita visualizar o template; </li>
           <li>6. Crie uma classe em python que encapsula dados de usuarios entre 5 e 6 campos, e desenvolva uma função de autenticação(valida dados, criar uma secção para guardar a autenticação).</li>
           </ul>
+          <h3>Observação:</h3>
+          <span>Na atividade feita, juntei a atividade 1,2,3 em uma só como atividade login, o mesmo foi feito para a atividade 4 e 5 formando a atividade de formulário, já a atividade 6 está como atividade Codigo Class</span>
       </div>
     `
       break;

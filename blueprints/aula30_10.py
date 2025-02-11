@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template
 
-aula_30_10_bp = Blueprint('atividades30_10', __name__, url_prefix='/projetos/aula3/atividades')
+aula_30_10_bp = Blueprint('atividades30_10', __name__, url_prefix='/projetos/aula4/atividades')
 
 
 @aula_30_10_bp.route('/tag_canva')
