@@ -1,3 +1,4 @@
+
 function openModal(aula) {
   let modalContent;
 

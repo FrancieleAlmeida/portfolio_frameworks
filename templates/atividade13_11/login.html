@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Atividade - Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/atividade13_11/login.css') }}">
+
 </head>
 <body>
     <h2>Login</h2>
-    {% if mensagem %}
-        <p style="color: red;">{{ mensagem }}</p>
+
+    {% if error_message %}
+        <div style="color: red;">
+            <p>{{ error_message }}</p>
+        </div>
     {% endif %}
-    <form action="{{ url_for('atividade13_11.login') }}" method="post">
-        <label for="user">Usuário:</label>
-        <input type="text" id="user" name="user" required>
-        <br><br>
-        <label for="password">Senha:</label>
-        <input type="password" id="password" name="password" required>
-        <br><br>
+
+    <form action="{{ url_for('atividade13_11.login') }}" method="POST">
+        <div>
+            <label for="username">Usuário:</label>
+            <input type="text" id="username" name="user" required>
+        </div>
+        <div>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
         <button type="submit">Entrar</button>
     </form>
+
 </body>
 </html>
