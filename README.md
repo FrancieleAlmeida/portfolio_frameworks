@@ -111,6 +111,13 @@ O portfólio é composto por atividades práticas realizadas durante o curso. Ab
 - **Resumo**: Entrega do portfólio final com todos os projetos e atividades realizadas ao longo do curso.
 
 
+## Implantação
+
+O projeto foi implantado no Render e pode ser acessado em:
+🔗 https://portfolio-frameworks.onrender.com
+
+
+
 
 
 
