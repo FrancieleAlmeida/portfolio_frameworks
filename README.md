@@ -26,31 +26,31 @@ Para rodar o projeto em sua máquina local, siga os passos abaixo:
   ```
 
 2. Acesse a pasta do projeto:
-   ```sh
+  ```bash
     cd portfolio_frameworks
   ```
 
 3. Crie um ambiente virtual e ative-o:
-   ```sh
+  ```bash
     python -m venv venv
     source venv/bin/activate  # Linux/macOS
     venv\Scripts\activate     # Windows
   ```
 
 4. Instale as dependências:
-   ```sh
+  ```bash
     pip install -r requirements.txt
   ```
 
 5. Execute a aplicação:
-  ```sh
+  ```bash
     flask run
   ```
 
 ## Estrutura do Projeto
 O projeto está organizado da seguinte forma:
 
-```sh
+```bash
 
 portfolio_frameworks/
 │
