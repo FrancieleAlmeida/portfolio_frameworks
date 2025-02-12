@@ -153,6 +153,8 @@ main {
 
   .summary p {
     max-width: 38ch;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
   }
 }
 
