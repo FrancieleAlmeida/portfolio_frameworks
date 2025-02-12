@@ -44,7 +44,12 @@ Para rodar o projeto em sua máquina local, siga os passos abaixo:
 
 5. Execute a aplicação:
   ```bash
-    flask run
+    python app.py
+  ```
+
+6. Acesse no navegador:
+  ```bash
+    http://127.0.0.1:5000
   ```
 
 ## Estrutura do Projeto
