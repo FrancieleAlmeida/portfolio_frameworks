@@ -147,6 +147,9 @@ function openModal(aula) {
           <li>4. Crie uma rota com 3 links, um para cada atividade anterior 1,2 e 3 sendo bonitas; </li>
           <li>5. Crie 6 rotas,sendo cada uma estilizada e bonita, sendo cada rota deve conter o curriculo de um integrante do grupo. </li>
           </ul>
+
+          <h3>Observação</h3>
+          <span>Na atividade realizada, juntei a atividade 4 em uma única tela inicial, que contém todas as demais atividades. A atividade 5 foi renomeada para "Currículos".</span>
         </div>
       `;
       break;
@@ -174,7 +177,7 @@ function openModal(aula) {
           <li>6. Crie uma classe em python que encapsula dados de usuarios entre 5 e 6 campos, e desenvolva uma função de autenticação(valida dados, criar uma secção para guardar a autenticação).</li>
           </ul>
           <h3>Observação:</h3>
-          <span>Na atividade feita, juntei a atividade 1,2,3 em uma só como atividade login, o mesmo foi feito para a atividade 4 e 5 formando a atividade de formulário, já a atividade 6 está como atividade Codigo Class</span>
+          <span>Na atividade realizada, combinei as atividades 1, 2 e 3 em uma única tela, que agora representa a atividade de login. O mesmo foi feito para as atividades 4 e 5, que formam a atividade de formulário. Já a atividade 6 foi renomeada para "Código Class"</span>
       </div>
     `
       break;
@@ -228,6 +231,8 @@ function openModal(aula) {
         <li>4. Limitar em duas tentativas de autenticação errada**;</li>
         <li>5. Alterar todos os retornos usando dados formatados em Json;</li>
         </ul>
+        <h3>Observação</h3>
+        <span>Todas as 5 atividades foram combinadas em uma única atividade.</span>
       </div>
     `
       break;

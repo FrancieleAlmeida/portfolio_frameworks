@@ -12,10 +12,10 @@
   </head>
 
   <body>
-    <a href="#header"><img class="inicio" src="{{url_for('static', filename='img/topo.svg')}}" alt=""></a>
+    <a href="{{url_for('index')}}"><img class="inicio" src="{{url_for('static', filename='img/topo.svg')}}" alt=""></a>
     <header class="header" id="header">
       <a href="{{url_for('index')}}" class="logo"><img src="{{url_for('static', filename='img/TADS.svg')}}" alt="logo"></a>
-  
+
       <nav>
         <ul class="header-menu">
           <li><a href="#sobre">Sobre</a></li>
@@ -33,7 +33,7 @@
         <span>Franciele Almeida de Araujo</span>
       </div>
     </main>
-  
+
     <section class="sobre" id="sobre">
       <h2>Sobre este Portfólio</h2>
       <p>Este portfólio reúne os projetos desenvolvidos na disciplina Frameworks para Desenvolvimento Web. Nele, estão registrados todos os conteúdos apresentados em aula, desde a introdução à matéria no primeiro dia até o trabalho final, previsto para ser entregue em fevereiro. O objetivo é demonstrar a evolução ao longo do curso, com destaque para o aprendizado e aplicação de conceitos fundamentais no desenvolvimento de aplicações web modernas.
@@ -62,18 +62,21 @@
             <span class="datas">09 10</span>
             <h3>Aula 01 - Introdução</h3>
             <p class="titulo-resumo">Na aula, foram apresentados a ementa e o plano da disciplina. Além disso, foi solicitada uma pesquisa, com o objetivo de aprofundar o conhecimento sobre os tópicos que serão abordados ao longo do curso. Marcado a entrega do Portfolio para 12/02/25 e a Prova foi adiada para o dia 08/01/25 e 15/01/25 e o trabalho em grupo para 22/01/25.
-            <br><a href="javascript:void(0);" onclick="openModal('aula1')">Saiba +</a> </p>
+              <br><a href="javascript:void(0);" onclick="openModal('aula1')" class="link">Saiba +</a>
+            </p>
           </div>
           <div>
             <span class="datas">16 10</span>
-            <h3>Aula 02 - Aula de Estudo</h3>
-            <p class="titulo-resumo">Aula destinada para estudos</p>
+            <h3>Aula 02 - Aula Livre</h3>
+            <p class="titulo-resumo">Aula destinada ao desenvolvimento de atividades e ao projeto final.
+            </p>
           </div>
           <div>
             <span class="datas">23 10</span>
             <h3>Aula 03 - Ambiente Virtual Python</h3>
             <p class="titulo-resumo">Conteudo da Aula: Nesta aula criamos as pastas: templates, static e pastas adjacentes. Além disso, o arquivo app.py, Utilizamos a barra de progresso e o tempo. As aulas vão começar com uma lista de atividades, depois conceitos que vamos utilizar pra fazer essas atividades. Nesse dia também tivemos uma divisão de grupos e sorteio dos temas dos trabalhos.
-            <br><a href="javascript:void(0);" onclick="openModal('aula3')">Saiba +</a></p>
+              <br><a href="javascript:void(0);" onclick="openModal('aula3')" class="link">Saiba +</a>
+            </p>
             </p>
           </div>
 
@@ -81,8 +84,8 @@
             <span class="datas">30 10</span>
             <h3>Aula 04 - Introdução ao Flask + Atividades</h3>
             <p class="titulo-resumo">Conteudo da Aula: Fundamentos do Flask, um microframework para desenvolvimento de aplicações web em Python. Exploramos os conceitos de requisição e resposta (Request & Response), essenciais no ambiente web. Entendemos que:Toda aplicação web funciona de forma reativa, processando apenas quando recebe uma requisição.O Flask permite que o código Python "escute" essas requisições e devolva uma resposta ao cliente.
-              <br><a href="javascript:void(0);" onclick="openModal('aula4')">Saiba + </a>
-              <span><a href="{{url_for('homeclassroom30_10')}}" target="_blank"> Ir para as atividades</a></span>
+              <br><a href="javascript:void(0);" onclick="openModal('aula4')" class="link">Saiba + </a>
+              <span><a href="{{url_for('homeclassroom30_10')}}" target="_blank" class="link"> Ir para as atividades</a></span>
             </p>
           </div>
 
@@ -90,8 +93,8 @@
             <span class="datas">06 11</span>
             <h3>Aula 05 - Render Template + Atividades</h3>
             <p class="titulo-resumo">Conteudo da Aula: Na aula, aprendemos a trabalhar com o Flask e templates dinâmicos. Utilizamos o método render_template para renderizar páginas HTML e passar dados do backend (Python) para o frontend (HTML). O Flask utiliza a linguagem de template Jinja2 para inserir variáveis diretamente no HTML, tornando a aplicação mais interativa e dinâmica.
-              <br><a href="javascript:void(0);" onclick="openModal('aula5')">Saiba + </a>
-              <span><a href="{{url_for('homeclassroom06_11')}}" target="_blank"> Ir para as atividades</a></span>
+              <br><a href="javascript:void(0);" onclick="openModal('aula5')" class="link">Saiba + </a>
+              <span><a href="{{url_for('homeclassroom06_11')}}" target="_blank" class="link"> Ir para as atividades</a></span>
             </p>
           </div>
 
@@ -99,33 +102,33 @@
             <span class="datas">13 11</span>
             <h3>Aula 06 - Regras para Desenvolvimento + Atividades</h3>
             <p class="titulo-resumo">Conteudo da Aula: Na aula abordamos práticas essenciais para o desenvolvimento de backends seguros e eficientes utilizando Flask. As principais regras e conceitos discutidos são: Validar os dados para evitar falhas de segurança, Garantir a consistência e persistência dos dados, Tratar exceções para evitar que a aplicação "quebre", A arquitetura síncrona do Flask é ideal para esse tipo de aplicação, garantindo respostas rápidas ao usuário.
-              <br><a href="javascript:void(0);" onclick="openModal('aula6')">Saiba + </a>
-              <span><a href=""> Ir para as atividades</a></span>
+              <br><a href="javascript:void(0);" onclick="openModal('aula6')" class="link">Saiba + </a>
+              <span><a href="{{url_for('homeclassroom13_11')}}" target="_blank" class="link"> Ir para as atividades</a></span>
             </p>
           </div>
           <div>
             <span class="datas">20 11</span>
-            <h3>Aula 07 - Sem aula Presencial</h3>
-            <p class="titulo-resumo"> Sem aula nesse dia, feriado do dia 20/11 dia da Consciência Negra.
+            <h3>Aula 07 - Aula Livre</h3>
+            <p class="titulo-resumo">Sem aula neste dia, devido ao feriado de 20/11, Dia da Consciência Negra.
             </p>
           </div>
 
           <div>
             <span class="datas">27 11</span>
             <h3>Aula 08 - Apresentação dos Protótipos do Projeto Final</h3>
-            <p class="titulo-resumo">Conteudo da Aula: Durante a aula, três grupos apresentaram os protótipos e objetivos de seus projetos finais. Cada grupo teve 15 minutos para realizar a apresentação, utilizando slides para destacar a evolução do trabalho até o momento. Ao final das apresentações, o professor fez observações e deu orientações específicas para melhorias nos projetos.
+            <p class="titulo-resumo"> Durante a aula, três grupos apresentaram os protótipos e os objetivos de seus projetos finais. Cada grupo teve 15 minutos para realizar a apresentação, utilizando slides para destacar a evolução do trabalho até aquele momento. Ao final das apresentações, o professor fez observações e forneceu orientações específicas para melhorias nos projetos.
             </p>
           </div>
           <div>
             <span class="datas">04 12</span>
-            <h3>Aula 09 - Sem aula Presencial</h3>
-            <p class="titulo-resumo">Professor em viagem, no ifms de campo grande, será alinhado a reposição da aula depois.
+            <h3>Aula 09 - Aula Livre</h3>
+            <p class="titulo-resumo">Aula destinada ao desenvolvimento de atividades e ao projeto final.
             </p>
           </div>
           <div>
             <span class="datas">11 12</span>
-            <h3>Aula 10 - Sem aula Presencial</h3>
-            <p class="titulo-resumo">Prova que estava marcada para o dia 11/12 foi adiada para a proxima semana, pois estava tendo reuniao de pais e mestres do ensino medio nos laboratorios do ifms, assim ficamos sem sala para efetuar a prova, com isso fomos incentivados pelo professor a apreciar a orquestra que estava se apresentando no campus.
+            <h3>Aula 10 - Aula Livre</h3>
+            <p class="titulo-resumo">A prova, que estava marcada para o dia 11/12, foi adiada para a próxima semana devido à reunião de pais e mestres do ensino médio, que estava acontecendo nos laboratórios do IFMS. Como não havia salas disponíveis para a realização da prova, o professor nos incentivou a apreciar a apresentação da orquestra no campus.
             </p>
           </div>
 
@@ -133,19 +136,20 @@
             <span class="datas">18 12</span>
             <h3>Aula 11 - Duvidas + Atividades</h3>
             <p class="titulo-resumo">Conteudo da Aula: A aula foi dedicada a esclarecer dúvidas e apresentar as novidades relacionadas aos projetos práticos. A prova, inicialmente marcada para hoje, foi adiada para os dias 08/01/25 e 15/01/25. Como forma de preparação, foram enviadas as atividades que seriam abordadas na prova, permitindo que os alunos pratiquem e se familiarizem com os conceitos. As atividades incluem: 1. Mini-blog Pessoal, 2. Página de autenticação básica, 3. Página de upload de foto.
-              <br><a href="javascript:void(0);" onclick="openModal('aula11')">Saiba + </a>
-              <span><a href=""> Ir para as atividades</a></span>
+              <br><a href="javascript:void(0);" onclick="openModal('aula11')" class="link">Saiba + </a>
+              <span><a href="{{url_for('homeclassroom18_12')}}" target="_blank" class="link"> Ir para as atividades</a></span>
             </p>
           </div>
           <div>
             <span class="datas">25 12</span>
-            <h3>Aula 12 e 13 - Recesso dia 23/12/24 à 06/01/25</h3>
-            <p class="titulo-resumo"> Sem aulas, recesso de Natal e fim de ano, retornando as aula a partir do dia 07/01.
+            <h3>Aulas 12 e 13 - Recesso de 23/12/24 a 06/01/25</h3>
+            <p class="titulo-resumo">Sem aulas devido ao recesso de Natal e fim de ano. As aulas retornam a partir de 07/01.
             </p>
           </div>
         </div>
         <div class="cronologia">
           <span class="ano">2025</span>
+          <span class="barra-tempo"></span>
           <span class="barra-tempo"></span>
           <span class="barra-tempo"></span>
           <span class="barra-tempo"></span>
@@ -155,31 +159,43 @@
           <div>
             <span class="datas">08 01</span>
             <h3>Aula 14 - Prova Prática</h3>
-            <p class="titulo-resumo"> Nesse dia dividiu a turma em dois grupos para realizar a prova, o primeiro grupo realizou a prova no dia 08/01/25 onde cada aluno tinha 30 minutos para realizar a prova que foi mandado com 48 horas antes no email institucional cadastrado do aluno.
+            <p class="titulo-resumo"> Neste dia, a turma foi dividida em dois grupos para realizar a prova. O primeiro grupo fez a prova no dia 08/01/25, com cada aluno tendo 30 minutos para concluí-la. A prova foi enviada 48 horas antes para o e-mail institucional cadastrado de cada aluno.
             </p>
           </div>
           <div>
             <span class="datas">15 01</span>
             <h3>Aula 15 - Prova Prática</h3>
-            <p class="titulo-resumo"> Nesse dia o ifms passava por problemas tecnicos(,falta de internet) por conta do fato não foi possivel o segundo grupo realizar a prova, com isso foi adiada para a proxima semana.
+            <p class="titulo-resumo"> Neste dia, o IFMS enfrentava problemas técnicos (falta de internet). Por conta disso, não foi possível realizar a prova do segundo grupo, e ela foi adiada para a próxima semana.
             </p>
           </div>
           <div>
             <span class="datas">22 01</span>
             <h3>Aula 16 - Prova Prática</h3>
-            <p class="titulo-resumo">Nesse dia o segundo grupo foi realizar a prova, onde cada aluno tinha 30 minutos para realizar a prova que foi mandado com 48 horas antes no email institucional cadastrado do aluno. Também foi solicitado a entrega do trabalho adiado para sabado 25/01/25, enviando no email o link do github que esta projeto. O tema do meu grupo foi: Análise de emoções em imagem.
+            <p class="titulo-resumo">Neste dia, o segundo grupo realizou a prova, onde cada aluno teve 30 minutos para concluí-la. A prova foi enviada 48 horas antes para o e-mail institucional cadastrado. Também foi solicitada a entrega do trabalho, que foi adiado para sábado, 25/01/25. O link do projeto no GitHub deveria ser enviado por e-mail. O tema do meu grupo foi: "Análise de emoções em imagens."
               <br>
-              <strong>Link para baixar o APK do projeto:</strong>  
-              <a href="https://www.dropbox.com/scl/fi/wbouvzjrjxkasx3mck2lq/Emo-oScan.apk?rlkey=kv9avm05sugis8o50p71qju6y&st=03d63fbr&dl=1" download>Baixar APK</a>
+              <strong>Link para baixar o APK do projeto:</strong>
+              <a href="https://www.dropbox.com/scl/fi/wbouvzjrjxkasx3mck2lq/Emo-oScan.apk?rlkey=kv9avm05sugis8o50p71qju6y&st=03d63fbr&dl=1" class="link" download>Baixar APK</a>
               <br>
-              <strong>Link para o projeto:
-              <a href="https://github.com/Nathan-Brito/analise_emocional.git" target="_blank"><img src="{{url_for('static', filename='img/github.svg')}}" alt=""></a></strong>
+              <strong class="github-link">Link para o projeto:
+                <a href="https://github.com/Nathan-Brito/analise_emocional.git" target="_blank" class="github-link"><img src="{{url_for('static', filename='img/github.svg')}}" alt=""></a></strong>
             </p>
           </div>
           <div>
             <span class="datas">29 01</span>
             <h3>Aula 17 - Feedback sobre a Prova</h3>
             <p class="titulo-resumo">Nessa aula o professor informou as notas das provas dos alunos que estavam presentes na aula, passando o Feedback de cada aluno presente.
+            </p>
+          </div>
+          <div>
+            <span class="datas">05 02</span>
+            <h3>Aula 18 - Aula Livre</h3>
+            <p class="titulo-resumo">Aula destinada ao desenvolvimento do projeto.
+            </p>
+          </div>
+          <div>
+            <span class="datas">12 02</span>
+            <h3>Aula 19 - Entrega do Portfólio</h3>
+            <p class="titulo-resumo">Aula destinada à entrega do portfólio.
             </p>
           </div>
         </div>

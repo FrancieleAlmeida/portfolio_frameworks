@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio - Atividades Aula 18/12</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/atividade18_12/home_atividade.css')}}">
+  </head>
+
+  <body>
+
+    <header>
+      <h1>Atividades</h1>
+      <span>Aula 18/12</span>
+    </header>
+    <main>
+      <ul>
+        <li>
+          <a href="{{url_for('atividades18_12.activity1')}}">Atividade 01<span> Mini-blog </span></a>
+        </li>
+        <li>
+          <a href="{{url_for('atividades18_12.activity2')}}">Atividade 02<span> Página de autenticação básica</span></a>
+        </li>
+        <li>
+          <a href="{{url_for('atividades18_12.upload')}}">Atividade 03<span>Página de upload de fotos</span></a>
+        </li>
+      </ul>
+    </main>
+  </body>
+
+</html>

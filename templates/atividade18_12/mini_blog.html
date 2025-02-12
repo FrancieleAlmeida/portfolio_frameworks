@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 - Mini Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/atividade18_12/mini_blog.css') }}">
+</head>
+<body>
+    <h1>Mini Blog</h1>
+    <form method="POST">
+        <textarea name="texto" placeholder="Escreva seu post..." required></textarea>
+        <button type="submit">Postar</button>
+    </form>
+    <ul>
+      {% for post in posts %}
+      <li>
+          <p>{{ post.texto }}</p>
+          <small>{{ post.data }}</small>
+      </li>
+      {% endfor %}
+  </ul>
+  
+  
+</body>
+</html>
