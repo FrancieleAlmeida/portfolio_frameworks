@@ -43,12 +43,14 @@ Para rodar o projeto em sua máquina local, siga os passos abaixo:
   ```
 
 5. Execute a aplicação:
-   ```sh
+  ```sh
     flask run
   ```
 
 ## Estrutura do Projeto
 O projeto está organizado da seguinte forma:
+
+```sh
 
 portfolio_frameworks/
 │
@@ -59,6 +61,7 @@ portfolio_frameworks/
 ├── requirements.txt     # Lista de dependências do projeto
 ├── README.md            # Documentação do projeto
 └── .gitignore           # Arquivo para ignorar arquivos no Git
+```
 
 ## Resumo das Aulas
 O portfólio é composto por atividades práticas realizadas durante o curso. Abaixo, estão listadas as aulas e os projetos relacionados.
